@@ -6,6 +6,7 @@ html,
   margin: 0rem;
   scroll-behavior: smooth;
   font-family: Tahoma, Verdana, sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 
 .RealNavbar {
   z-index: 30;
-  background-color: rgba(72, 72, 72, 1);
+  background-color: rgba(72, 72, 72, 0.9);
   color: black;
   position: fixed;
   top: 0rem;
@@ -28,7 +29,8 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 0.5rem 1rem 0.2rem 0rem;
-  box-shadow: 0rem 0.1rem 2rem black;
+  box-shadow: 0rem -3rem 9rem #f7accf;
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 
 .RealNavbar > ul {
@@ -39,11 +41,16 @@ body {
   padding-bottom: 1rem;
 }
 .RealNavbar > ul > li > a {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   font-size: 1.5rem;
   color: #6874e8;
   font-weight: bold;
   transition: color 0.3s;
+  text-shadow: 0rem 0rem 0.3rem #000000;
+}
+
+.RealNavbar > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 /* Navbar*/
@@ -57,7 +64,16 @@ body {
   height: fit-content;
   box-sizing: border-box;
   padding: 2rem 1rem 1rem 0rem;
-  box-shadow: 0rem 0.1rem 2rem black;
+  box-shadow: 0.6rem 0.6rem 3rem black;
+  transition: border-radius ease-in 0.3s;
+}
+
+#middleelement {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.navbar:hover {
+  border-radius: 0rem 0rem 7rem 7rem;
 }
 
 .navbar > ul {
@@ -69,10 +85,12 @@ body {
 }
 .navbar > ul > li > a {
   padding: 0rem 1rem 0rem 1rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #6874e8;
   font-weight: bold;
+  text-decoration: underline;
   transition: color 0.3s;
+  text-shadow: 0rem 0rem 0.3rem #000000;
 }
 
 /* Header titre du haut */
@@ -80,7 +98,7 @@ header {
   background-color: #1c1c1c;
   height: fit-content;
   box-sizing: border-box;
-  padding: 8%;
+  padding: 17% 8% 8% 8%;
   text-align: center;
   box-shadow: 0rem 0rem 5rem 6rem #1c1c1c;
   margin-bottom: 12rem;
@@ -104,14 +122,17 @@ header > b > span {
 }
 
 header > b > p {
-  transition: ease 4s color;
+  transition: ease 1s padding, ease 1s font-size;
   font-size: 6rem;
   color: #6874e8;
   padding-top: 1rem;
+  text-shadow: 0rem 0rem 1rem #000000, 0rem 0rem 4rem #f7accf;
 }
 
 header > b > p:hover {
-  color: #f7accf;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  font-size: 8rem;
 }
 
 /* Presentation et parcours */
@@ -121,6 +142,7 @@ header > b > p:hover {
   box-sizing: border-box;
   padding: 3rem 3rem 6rem 3rem;
   background-color: #1c1c1c;
+  box-shadow: 0.6rem 0.6rem 1rem #f7accf;
 }
 
 .PresentationParcours > .presentation {
@@ -141,7 +163,7 @@ header > b > p:hover {
   color: #6874e8;
   text-align: left;
   height: 30%;
-  padding-left: 1rem;
+  text-shadow: 0rem 0rem 0.3rem #000000, 0rem 0rem 3.4rem #f7accf;
 }
 .texte1 {
   transition: font-size 0.3s ease-in;
@@ -188,11 +210,11 @@ header > b > p:hover {
 
 .Competences > .cadre > ul > li > .apprentissage {
   font-size: 2.3rem;
-  color: #f7accf;
+  color: lightcoral;
 }
 
 .Competences > .cadre:hover {
-  border-radius: 7rem;
+  border-radius: 10rem;
 }
 
 /* Footer */
@@ -207,13 +229,16 @@ footer {
   min-height: 45rem;
   background-color: #1c1c1c;
   text-align: center;
+  top: 0rem 0.2rem 3rem #f7accf;
 }
 .title {
   text-align: center;
+  font-weight: bold;
   font-size: 4rem;
   background-color: none;
   color: #6874e8;
   height: 30%;
+  text-shadow: 0rem 0rem 0.3rem #000000, 0rem 0rem 3.4rem #f7accf;
 }
 
 footer > .projets {
@@ -259,4 +284,8 @@ footer > .contacts {
 .footertexte > ul > li > a {
   color: #e8f0ff;
   font-size: 2.5rem;
+}
+
+.footertexte > ul > li > a:hover {
+  text-decoration: underline;
 }
