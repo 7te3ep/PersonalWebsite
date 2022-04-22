@@ -56,14 +56,15 @@ body {
 /* Navbar*/
 .navbar {
   z-index: 50;
-  background-color: rgba(72, 72, 72, 1);
+  background: rgb(72, 72, 72, 1);
   color: black;
   position: relative;
   float: top;
   top: 0rem;
+  border-radius: 0rem 0rem 4rem 4rem;
   height: fit-content;
   box-sizing: border-box;
-  padding: 2rem 1rem 1rem 0rem;
+  padding: 2.5rem 1rem 1rem 0rem;
   box-shadow: 0.6rem 0.6rem 3rem black;
   transition: border-radius ease-in 0.3s;
 }
@@ -90,7 +91,7 @@ body {
   font-weight: bold;
   text-decoration: underline;
   transition: color 0.3s;
-  text-shadow: 0rem 0rem 0.3rem #000000;
+  text-shadow: 0rem 0rem 0.2rem #000000, 0rem 0rem 4rem #f7accf;
 }
 
 /* Header titre du haut */
