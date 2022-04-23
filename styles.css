@@ -17,81 +17,120 @@ body {
   background-size: cover;
   height: fit-content;
 }
-/* Reale Navbar */
-
-.RealNavbar {
-  z-index: 30;
-  background-color: rgba(72, 72, 72, 0.9);
-  color: black;
-  position: fixed;
+/* Navbar */
+.navbar {
+  z-index: 70;
+  height: 7rem;
+  position: sticky;
   top: 0rem;
-  height: fit-content;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.5rem 1rem 0.2rem 0rem;
-  box-shadow: 0rem -3rem 9rem #f7accf;
-  border-radius: 0rem 0rem 2rem 2rem;
+  background-color: #1c1c1c;
+  box-shadow: 0rem 1rem 3rem #1c1c1c;
 }
 
-.RealNavbar > ul {
-  text-align: center;
+.left {
+  width: fit-content;
+  float: left;
+  /* background-color: red; */
+  height: 100%;
+  padding-right: 1rem;
 }
-.RealNavbar > ul > li {
-  display: inline-block;
+
+.logo {
+  position: relative;
+  /*background-color: violet; */
+  width: fit-content;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.3rem;
+}
+img {
+  display: block;
+  position: relative;
+  border-radius: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.name {
+  position: relative;
+  /* background-color: green;*/
+  width: fit-content;
+  float: right;
+  height: 100%;
+  padding-left: 1rem;
+  text-align: center;
+  line-height: 7rem;
+  color: #6874e8;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.right {
+  width: fit-content;
+  min-width: 20%;
+  height: 100%;
+  max-height: 7rem;
+  box-sizing: border-box;
+  float: right;
+  /* background-color: blue; */
+  text-align: center;
+  line-height: 7rem;
+  margin-right: 5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.RealNavbar > ul > li > a {
-  padding: 1rem 1rem 1rem 1rem;
-  font-size: 1.5rem;
+
+.button {
+  float: right;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
   color: #6874e8;
   font-weight: bold;
-  transition: color 0.3s;
-  text-shadow: 0rem 0rem 0.3rem #000000;
-}
-
-.RealNavbar > ul > li > a:hover {
-  text-decoration: underline;
-}
-
-/* Navbar*/
-.navbar {
-  z-index: 50;
-  background: rgb(72, 72, 72, 1);
-  color: black;
-  position: relative;
-  float: top;
-  top: 0rem;
-  border-radius: 0rem 0rem 4rem 4rem;
+  background-color: rgba(176, 176, 176, 0.2);
+  border-radius: 7rem;
+  height: fit-content;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  width: fit-content;
   height: fit-content;
   box-sizing: border-box;
-  padding: 2.5rem 1rem 1rem 0rem;
-  box-shadow: 0.6rem 0.6rem 3rem black;
-  transition: border-radius ease-in 0.3s;
+  padding: 0rem 2rem 0rem 2rem;
 }
-
-#middleelement {
-  padding-left: 3%;
-  padding-right: 3%;
-}
-.navbar:hover {
-  border-radius: 0rem 0rem 7rem 7rem;
-}
-
-.navbar > ul {
+.navigate {
+  z-index: 20;
+  position: absolute;
+  top: 7rem;
+  background-color: rgba(27, 27, 27, 0.95);
+  box-sizing: border-box;
+  padding: 0rem 2.5rem 0rem 2.5rem;
+  width: fit-content;
+  height: fit-content;
+  transition: right ease 0.7s;
+  right: -100%;
+  border-bottom-left-radius: 3rem;
   text-align: center;
 }
-.navbar > ul > li {
-  display: inline-block;
-  padding-bottom: 2rem;
+#middle {
+  padding: 0rem 1.8rem 0rem 1.8rem;
 }
-.navbar > ul > li > a {
-  padding: 0rem 1rem 0rem 1rem;
-  font-size: 2.2rem;
+.navigate > ul {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+}
+.right:hover > .navigate {
+  right: 0rem;
+}
+.navigate > ul > li {
+  display: inline-block;
+  height: 2rem;
+}
+.navigate > ul > li > a {
+  text-align: center;
   color: #6874e8;
   font-weight: bold;
   text-decoration: underline;
-  transition: color 0.3s;
-  text-shadow: 0rem 0rem 0.2rem #000000, 0rem 0rem 4rem #f7accf;
+  font-size: 1.5rem;
 }
 
 /* Header titre du haut */
@@ -99,7 +138,7 @@ header {
   background-color: #1c1c1c;
   height: fit-content;
   box-sizing: border-box;
-  padding: 17% 8% 8% 8%;
+  padding: 11% 8% 8% 8%;
   text-align: center;
   box-shadow: 0rem 0rem 5rem 6rem #1c1c1c;
   margin-bottom: 12rem;
@@ -127,7 +166,7 @@ header > b > p {
   font-size: 6rem;
   color: #6874e8;
   padding-top: 1rem;
-  text-shadow: 0rem 0rem 1rem #000000, 0rem 0rem 4rem #f7accf;
+  text-shadow: 0rem 0rem 1rem #000000, 0rem 0rem 4rem rgba(176, 176, 176, 0.5);
 }
 
 header > b > p:hover {
@@ -143,7 +182,7 @@ header > b > p:hover {
   box-sizing: border-box;
   padding: 3rem 3rem 6rem 3rem;
   background-color: #1c1c1c;
-  box-shadow: 0.6rem 0.6rem 1rem #f7accf;
+  box-shadow: 0.6rem 0.6rem 1rem rgba(176, 176, 176, 0.5);
 }
 
 .PresentationParcours > .presentation {
@@ -164,7 +203,8 @@ header > b > p:hover {
   color: #6874e8;
   text-align: left;
   height: 30%;
-  text-shadow: 0rem 0rem 0.3rem #000000, 0rem 0rem 3.4rem #f7accf;
+  text-shadow: 0rem 0rem 0.3rem #000000,
+    0rem 0rem 3.4rem rgba(176, 176, 176, 0.5);
 }
 .texte1 {
   transition: font-size 0.3s ease-in;
@@ -191,7 +231,7 @@ header > b > p:hover {
   background-color: #1c1c1c;
   box-sizing: border-box;
   padding: 8rem 5rem 5rem 5rem;
-  box-shadow: 0.6rem 0.6rem 1rem #f7accf;
+  box-shadow: 0.6rem 0.6rem 1rem rgba(176, 176, 176, 0.5);
   border-radius: 2rem;
 }
 
@@ -230,7 +270,7 @@ footer {
   min-height: 45rem;
   background-color: #1c1c1c;
   text-align: center;
-  top: 0rem 0.2rem 3rem #f7accf;
+  top: 0rem 0.2rem 3rem rgba(176, 176, 176, 0.5);
 }
 .title {
   text-align: center;
@@ -239,7 +279,8 @@ footer {
   background-color: none;
   color: #6874e8;
   height: 30%;
-  text-shadow: 0rem 0rem 0.3rem #000000, 0rem 0rem 3.4rem #f7accf;
+  text-shadow: 0rem 0rem 0.3rem #000000,
+    0rem 0rem 3.4rem rgba(176, 176, 176, 0.5);
 }
 
 footer > .projets {
