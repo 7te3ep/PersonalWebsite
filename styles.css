@@ -7,6 +7,7 @@ html,
   scroll-behavior: smooth;
   font-family: Tahoma, Verdana, sans-serif;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   height: fit-content;
+  overflow-x: hidden;
 }
 /* Navbar */
 .navbar {
@@ -42,7 +44,7 @@ body {
   float: left;
   height: 100%;
   box-sizing: border-box;
-  padding: 0.3rem;
+  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
 }
 img {
   display: block;
@@ -50,6 +52,7 @@ img {
   border-radius: 100%;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: #000000 0rem 0rem 1rem;
 }
 .name {
   position: relative;
@@ -95,6 +98,7 @@ img {
   height: fit-content;
   box-sizing: border-box;
   padding: 0rem 2rem 0rem 2rem;
+  box-shadow: #000000 0rem 0rem 1.2rem;
 }
 .navigate {
   z-index: 20;
@@ -130,7 +134,7 @@ img {
   color: #6874e8;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Header titre du haut */
@@ -138,7 +142,7 @@ header {
   background-color: #1c1c1c;
   height: fit-content;
   box-sizing: border-box;
-  padding: 11% 8% 8% 8%;
+  padding: 13% 8% 8% 8%;
   text-align: center;
   box-shadow: 0rem 0rem 5rem 6rem #1c1c1c;
   margin-bottom: 12rem;
@@ -172,7 +176,7 @@ header > b > p {
 header > b > p:hover {
   padding-top: 6rem;
   padding-bottom: 5rem;
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 /* Presentation et parcours */
@@ -211,8 +215,9 @@ header > b > p:hover {
   padding-top: 2rem;
   padding-left: 3rem;
   background-color: none;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   height: 70%;
+  text-indent: 3rem;
 }
 
 /* Competences */
@@ -241,16 +246,16 @@ header > b > p:hover {
 
 .Competences > .cadre > ul > li {
   padding-top: 2.3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .Competences > .cadre > ul > li > .maitriser {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: lightgreen;
 }
 
 .Competences > .cadre > ul > li > .apprentissage {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: lightcoral;
 }
 
@@ -260,14 +265,14 @@ header > b > p:hover {
 
 /* Footer */
 b {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 footer {
   box-sizing: border-box;
   padding: 1rem;
   margin-top: 3rem;
   height: fit-content;
-  min-height: 45rem;
+  min-height: 30rem;
   background-color: #1c1c1c;
   text-align: center;
   top: 0rem 0.2rem 3rem rgba(176, 176, 176, 0.5);
@@ -275,7 +280,7 @@ footer {
 .title {
   text-align: center;
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 2.8rem;
   background-color: none;
   color: #6874e8;
   height: 30%;
@@ -286,7 +291,6 @@ footer {
 footer > .projets {
   box-sizing: border-box;
   padding: 1rem;
-
   display: inline-block;
   width: 50%;
   background-color: none;
@@ -302,7 +306,7 @@ footer > .contacts {
 
 .footertexte {
   margin-top: 1.3rem;
-  font-size: 2rem;
+  font-size: 1rem;
   box-sizing: border-box;
   padding: 0.5rem;
   color: #e8f0ff;
@@ -313,19 +317,19 @@ footer > .contacts {
   margin-bottom: 1rem;
 }
 .footertexte > ul > .test {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
 }
 .footertexte > ul > li {
-  font-size: 2.5rem;
-  margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 .footertexte > ul > .test {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .footertexte > ul > li > a {
   color: #e8f0ff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .footertexte > ul > li > a:hover {
