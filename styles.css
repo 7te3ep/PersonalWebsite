@@ -18,6 +18,13 @@ body {
   background-size: cover;
   height: fit-content;
   overflow-x: hidden;
+  width: 100%;
+}
+
+.gotoprofile {
+  display: block;
+  width: fit-content;
+  height: 100%;
 }
 /* Navbar */
 .navbar {
@@ -27,6 +34,7 @@ body {
   top: 0rem;
   background-color: #1c1c1c;
   box-shadow: 0rem 1rem 3rem #1c1c1c;
+  overflow-x: hidden;
 }
 
 .left {
@@ -149,7 +157,7 @@ header {
 }
 header > b {
   position: relative;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #e8f0ff;
   line-height: 150%;
   background-color: none;
@@ -158,7 +166,7 @@ header > b {
 
 header > b > span {
   position: relative;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #e8f0ff;
   line-height: 150%;
   background-color: none;
@@ -167,7 +175,7 @@ header > b > span {
 
 header > b > p {
   transition: ease 1s padding, ease 1s font-size;
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: #6874e8;
   padding-top: 1rem;
   text-shadow: 0rem 0rem 1rem #000000, 0rem 0rem 4rem rgba(176, 176, 176, 0.5);
