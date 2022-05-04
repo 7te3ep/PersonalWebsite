@@ -30,11 +30,12 @@ body {
 .navbar {
   z-index: 70;
   height: 7rem;
+  min-height: 7rem;
   position: sticky;
   top: 0rem;
   background-color: #1c1c1c;
   box-shadow: 0rem 1rem 3rem #1c1c1c;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .left {
@@ -118,9 +119,10 @@ img {
   width: fit-content;
   height: fit-content;
   transition: right ease 0.7s;
-  right: -100%;
+  right: 0rem;
   border-bottom-left-radius: 3rem;
   text-align: center;
+  visibility: hidden;
 }
 #middle {
   padding: 0rem 1.8rem 0rem 1.8rem;
@@ -131,7 +133,7 @@ img {
   text-align: center;
 }
 .right:hover > .navigate {
-  right: 0rem;
+  visibility: visible;
 }
 .navigate > ul > li {
   display: inline-block;
@@ -150,7 +152,7 @@ header {
   background-color: #1c1c1c;
   height: fit-content;
   box-sizing: border-box;
-  padding: 13% 8% 8% 8%;
+  padding: 6% 8% 8% 8%;
   text-align: center;
   box-shadow: 0rem 0rem 5rem 6rem #1c1c1c;
   margin-bottom: 12rem;
