@@ -28,7 +28,7 @@ body {
 }
 /* Navbar */
 .navbar {
-  z-index: 70;
+  z-index: 150;;
   height: 7rem;
   min-height: 7rem;
   position: sticky;
@@ -156,6 +156,9 @@ header {
   text-align: center;
   box-shadow: 0rem 0rem 5rem 6rem #1c1c1c;
   margin-bottom: 12rem;
+  position: relative;
+  top: -8rem;
+  transition: top 0.2s ease;
 }
 header > b {
   position: relative;
@@ -344,4 +347,39 @@ footer > .contacts {
 
 .footertexte > ul > li > a:hover {
   text-decoration: underline;
+}
+
+/* Js menu Navigation */
+
+#menu {
+  z-index: 100;
+  position: sticky;
+  display: flex;
+  transform: scaleY(0);
+  width: 100%;
+  top: 7rem;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  border-top: solid black 0.6rem;
+  box-shadow: 0rem 1rem 2rem black;
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  visibility: visible;
+}
+#menu > ul  {
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+}
+#menu > ul > li {
+  padding: 1rem 1rem;
+}
+#menu > ul > li > a {
+  color:#6874e8;
+  font-weight: bold;
 }
